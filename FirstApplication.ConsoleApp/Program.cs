@@ -18,7 +18,7 @@ namespace FirstApplication.ConsoleApp // Объявление пространс
             int age = Convert.ToInt32(Console.ReadLine()); //Запрос возраста, запись в переменную age
             Console.WriteLine("Хорошо, {0}, а как называется Ваша должность?", name);
             var work = Console.ReadLine(); //Запрос должности, запись в переменную work
-            Console.WriteLine("{0}, я записал, что Вам {1} и Вы работаете на должности {2}", name, age, work);
+            Console.WriteLine("\t{0}, \n\tя записал, что Вам {1} \n\tи Вы работаете на должности {2}", name, age, work);
         }
     }
 }
