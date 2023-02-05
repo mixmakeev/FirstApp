@@ -16,9 +16,11 @@ namespace FirstApplication.ConsoleApp // Объявление пространс
             var name = Console.ReadLine(); // Запрос имени, запись в переменную name
             Console.WriteLine("Здравствуйте, {0}, сколько Вам лет?", name);
             int age = Convert.ToInt32(Console.ReadLine()); //Запрос возраста, запись в переменную age
+            Console.WriteLine("{0}, Какой у Вас размер обуви?", name);
+            double MyShoeSize = Convert.ToDouble(Console.ReadLine()); // Запрос имени, запись в переменную name      
             Console.WriteLine("Хорошо, {0}, а как называется Ваша должность?", name);
             var work = Console.ReadLine(); //Запрос должности, запись в переменную work
-            Console.WriteLine("\t{0}, \n\tя записал, что Вам {1} \n\tи Вы работаете на должности {2}", name, age, work);
+            Console.WriteLine("\t{0}, \n\tя записал, что Вам {1} \n\tи Вы работаете на должности {2}\nразмер обуви {3}", name, age, work, MyShoeSize);
         }
     }
 }
