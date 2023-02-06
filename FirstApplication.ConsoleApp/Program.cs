@@ -14,13 +14,13 @@ namespace FirstApplication.ConsoleApp // Объявление пространс
             System.Console.InputEncoding = enc1251;
             Console.WriteLine("Как Вас зовут?"); // Задать вопрос
             var name = Console.ReadLine(); // Запрос имени, запись в переменную name
-            Console.WriteLine("Здравствуйте, {0}, сколько Вам лет?", name);
+            Console.WriteLine($"Здравствуйте, {name}, сколько Вам лет?");
             int age = Convert.ToInt32(Console.ReadLine()); //Запрос возраста, запись в переменную age
-            Console.WriteLine("{0}, Какой у Вас размер обуви?", name);
+            Console.WriteLine($"{name}, Какой у Вас размер обуви?");
             double MyShoeSize = Convert.ToDouble(Console.ReadLine()); // Запрос имени, запись в переменную name      
-            Console.WriteLine("Хорошо, {0}, а как называется Ваша должность?", name);
+            Console.WriteLine($"Хорошо, {name}, а как называется Ваша должность?");
             var work = Console.ReadLine(); //Запрос должности, запись в переменную work
-            Console.WriteLine("\t{0}, \n\tя записал, что Вам {1} \n\tи Вы работаете на должности {2}\nразмер обуви {3}", name, age, work, MyShoeSize);
+            Console.WriteLine($"\t{name}, \n\tВам {age} \n\tВы работаете на должности {work}\nразмер обуви {MyShoeSize}");
         }
     }
 }
